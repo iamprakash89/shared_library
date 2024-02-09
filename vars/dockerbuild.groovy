@@ -3,7 +3,7 @@
 
       docker image build -t ${user}:${project} .
       docker iamge tag  ${user}:${project} ${user}:${project}:${imgtag}
-      docker iamge tag  ${user}:${project} ${user}:${project}:latest
+      docker image tag  ${user}:${project} ${user}:${project}:latest
      """
 }
 //  // docker image build -t ${DuserUser}:${projectname} .
