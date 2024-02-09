@@ -1,7 +1,7 @@
-def call(String projectname, String Imgname, String DuserUser){
+def call(String project, String Imgname, String DuserUser){
     sh """
 
-     docker image build -t ${DuserUser}:${projectname} -t ${DuserUser}:${projectname}:${Imgname} -t ${DuserUser}:${projectname}:latest .
+     docker image build -t ${DuserUser}:${project} -t ${DuserUser}:${project}:v1 -t ${DuserUser}:${project}:latest .
     """
 }
  // docker image build -t ${DuserUser}:${projectname} .
