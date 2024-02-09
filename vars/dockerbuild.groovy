@@ -2,7 +2,7 @@
      sh """
 
       docker image build -t ${user}:${project} .
-      docker iamge tag  ${user}:${project} ${user}:${project}:${imgtag}
+      docker image tag  ${user}:${project} ${user}:${project}:${imgtag}
       docker image tag  ${user}:${project} ${user}:${project}:latest
      """
 }
