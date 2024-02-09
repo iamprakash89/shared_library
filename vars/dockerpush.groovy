@@ -13,7 +13,7 @@
 def call(String project, String accountid, String region){
     sh """
       
-       docker login -u AWS -p $(aws ecr get-login-password --region  ${region}) ${accountid}.dkr.ecr.${region}.amazonaws.com
+       docker login -u AWS -p $(aws ecr get-login-password --region ap-south-1) ${accountid}.dkr.ecr.${region}.amazonaws.com
        docker push ${accountid}.dkr.ecr.${region}.amazonaws.com/${project}:latest
     """
 } 
