@@ -1,7 +1,7 @@
 def call(String project, String Imgname, String DuserUser){
     sh """
 
-     docker image build -t ${DuserUser}:${project} -t ${DuserUser}:${project}:v1 -t ${DuserUser}:${project}:latest .
+     docker image build -t ${DuserUser}:${project} -t ${DuserUser}:${project}:latest .
     """
 }
  // docker image build -t ${DuserUser}:${projectname} .
